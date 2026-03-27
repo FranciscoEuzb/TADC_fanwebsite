@@ -59,7 +59,6 @@ main .txt1, .txt3{
 
 main .txt1, .txt2, .txt3{
 
-    display: block;
     font-size: 15px;
     border-radius: 10px;
     text-align: justify;
@@ -73,7 +72,7 @@ main .txt1, .txt2, .txt3{
 
 main .txt2{
 
-    display: block;
+    display: block; 
     font-size: 15px;
     background-color: rgb(108, 139, 206);
     border: 15px solid rgb(108, 139, 206);
@@ -87,8 +86,67 @@ main .txt2{
 }
 
 
+main .divpomni, .divjax, .divragatha, .divkinger, .divzooble, .divgangle, .divcain, .divbolha{
+
+    border: 2px solid black;
+    height: 300px;
+    width: 20%;
+    display: block;
+    align-self: center;
+    justify-self: center;
+    color: black; 
+    display: flex;
+    float: left;
+    align-items: center;
+    
+
+}
+
+
+
 footer{
 
 
 
 }
+
+
+.carrossel {    
+
+    overflow: hidden;
+    position: relative;
+    max-width: 200%;
+
+}
+
+.slides{
+
+    display: flex;
+    transition: 0.5s ease-in-out;
+
+}
+
+.slides div{
+
+object-fit: contain;
+display: block;
+max-width: 100%;
+
+}
+
+#section2 button {
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  #section2 button:hover {
+    background-color: rgba(0,0,0,0.75);
+  }
+  .esquerda { left: 10px; }
+  .direita { right: 10px; }
